@@ -1,0 +1,15 @@
+{
+  "name": "coffeestyles",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch" 
+  },
+  "keywords": [],
+  "author": "thanhphucnguyen",
+  "license": "ISC",
+  "description": "thanhphucnguyen",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
