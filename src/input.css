@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ct: custom */
+.ct-top-menu-item {
+  @apply cursor-pointer py-1 hover:text-gray-800 relative after:absolute after:bottom-0 after:left-0 after:bg-light-coffee after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:ease-in-out after:duration-300;
+}
+
+.ct-top-menu-item-active {
+  @apply text-gray-700;
+}
+
+.ct-icon {
+    @apply w-5 h-5 inline-block;
+}
+
+.ct-badge-circle {
+    @apply text-xs text-center rounded-full px-1.5;
+}
+
+.ct-topmenu-expanded {
+  @apply absolute top-14 z-50 w-full text-center bg-white shadow-lg rounded-b-xl text-gray-800 animate-slideDown;
+  @apply py-4 px-6 space-y-4;
+}
